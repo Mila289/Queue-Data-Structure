@@ -20,3 +20,15 @@ class Queue:
 
     def peek(self):
         return self.items[0]
+
+
+if __name__ == '__main__':
+   q = Queue()
+   print(q.is_empty())
+   q.enqueue('First')
+   q.enqueue('Second')
+   print(q)
+   print(q.dequeue())
+   print(q)
+   print(q.size())
+   print(q.peek())
